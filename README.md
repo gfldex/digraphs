@@ -13,7 +13,9 @@ running screen anyway, this will save quite some time.
 
 To install run the following and restart screen.
 
+```
 ln -s bin/digraphs.pl ~/bin/digraphs
 echo 'bindkey ^K exec .! digraphs' >> ~/.screenrc 
+```
 
 © 2016 Wenzel P. P. Peppmeyer
