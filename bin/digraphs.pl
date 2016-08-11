@@ -6,27 +6,21 @@ use utf8;
 
 use Term::ReadKey;
 
-if ( @ARGV ) {
-print <<'EOH';
-echo 'bindkey ^K exec .! digraphs' >> ~/.screenrc 
-EOH
-exit 1
-}
 
 my %digraphs = (
     '  '    =>  ' ',
     '!I'    =>  '¡',
-    Ct      =>  '¢',
-    Pd      =>  '£',
-    Cu      =>  '¤',
-    Ye      =>  '¥',
-    BB      =>  '¦',
-    SE      =>  '§',
+    'Ct'    =>  '¢',
+    'Pd'    =>  '£',
+    'Cu'    =>  '¤',
+    'Ye'    =>  '¥',
+    'BB'    =>  '¦',
+    'SE'    =>  '§',
     "':"    =>  '¨',
-    Co      =>  '©',
+    'Oc'    =>  '©',
     '-a'    =>  'ª',
     NO      =>  '¬',
-    Rg      =>  '®',
+    'Or'    =>  '®',
     "'m"    =>  '¯',
     DG      =>  '°',
     '+-'    =>  '±',
@@ -112,6 +106,9 @@ my %digraphs = (
     "y'"    =>  'ý',
     th      =>  'þ',
     'y:'    =>  'ÿ',
+    '"a'    =>  'ä',
+    '"o'    =>  'ö',
+    '"ü'    =>  'ü',
     '..'    =>  '…',
     'p*'    =>  'π',
     '=~'    =>  '≅',
@@ -209,6 +206,21 @@ my %digraphs = (
     "h*"    =>  '✱'
 );
 
+binmode(STDOUT, ':utf8');
+
+if ( @ARGV ) {
+print <<'EOH';
+echo 'bindkey ^K exec .! digraphs' >> ~/.screenrc 
+
+EOH
+
+for (sort keys %digraphs) {
+    print $_, ' ', $digraphs{$_}, "\n"
+}
+
+exit 1
+}
+
 ReadMode 3;
 
 my $first = ReadKey;
@@ -216,7 +228,6 @@ my $second = ReadKey;
 
 ReadMode 0;
 
-binmode(STDOUT, ':utf8');
 
 # print "«$first»«$second»";
 
