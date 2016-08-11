@@ -17,10 +17,10 @@ my %digraphs = (
     'BB'    =>  '¦',
     'SE'    =>  '§',
     "':"    =>  '¨',
-    'Oc'    =>  '©',
     '-a'    =>  'ª',
     NO      =>  '¬',
     'Or'    =>  '®',
+    'Oc'    =>  '©',
     "'m"    =>  '¯',
     DG      =>  '°',
     '+-'    =>  '±',
@@ -221,13 +221,14 @@ for (sort keys %digraphs) {
 exit 1
 }
 
+$SIG{'INT'} = sub { ReadMode 0; exit 0 };
+
 ReadMode 3;
 
 my $first = ReadKey;
 my $second = ReadKey;
 
 ReadMode 0;
-
 
 # print "«$first»«$second»";
 
