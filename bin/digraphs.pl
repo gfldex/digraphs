@@ -299,7 +299,7 @@ EOH
     }
 
     print "\n";
-    exit 1
+    exit 0
 }
 
 $SIG{'INT'} = sub { ReadMode 0; exit 0 };
