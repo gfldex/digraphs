@@ -285,19 +285,21 @@ my %digraphs = (
 binmode(STDOUT, ':utf8');
 
 if ( @ARGV ) {
+
 print <<'EOH';
 echo 'bindkey ^K exec .! digraphs' >> ~/.screenrc 
 
 EOH
 
-my $c = 0;
+    my $c = 0;
 
-for (sort keys %digraphs) {
-    print $_, ' ', $digraphs{$_}, "    ";
-    print "\n" unless $c++ % 10;
-}
+    for (sort keys %digraphs) {
+        print $_, ' ', $digraphs{$_}, "    ";
+        print "\n" unless $c++ % 10;
+    }
 
-exit 1
+    print "\n";
+    exit 1
 }
 
 $SIG{'INT'} = sub { ReadMode 0; exit 0 };
