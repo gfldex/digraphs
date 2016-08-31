@@ -298,7 +298,8 @@ my %digraphs = (
     "**"    =>  '⁑',
     "h*"    =>  '✱',
 
-    'le'    =>  '✉'
+    'le'    =>  '✉',
+    'ha'    =>  '♥'
 );
 
 binmode(STDOUT, ':utf8');
