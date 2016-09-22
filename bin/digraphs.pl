@@ -337,6 +337,6 @@ my $second = ReadKey;
 
 ReadMode 0;
 
-print "«$first»«$second»";
+# print "«$first»«$second»";
 
 print $digraphs{$first . $second} // ''
