@@ -313,7 +313,8 @@ my %digraphs = (
     "h*"    =>  '✱',
 
     'le'    =>  '✉',
-    'ha'    =>  '♥'
+    'ha'    =>  '♥',
+    'de'    =>  '☠',
 );
 
 binmode(STDOUT, ':utf8');
@@ -321,7 +322,7 @@ binmode(STDOUT, ':utf8');
 if ( @ARGV ) {
 
 print <<'EOH';
-echo 'bindkey ^K exec .! digraphs' >> ~/.screenrc 
+echo 'bindkey ^K exec .! digraphs' >> ~/.screenrc
 
 EOH
 
