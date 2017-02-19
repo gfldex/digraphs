@@ -379,6 +379,13 @@ EOH
     }
 
     print "\n";
+
+    for (sort keys %digraphs) {
+        print $digraphs{$_}, " ";
+    }
+
+    print "\n";
+
     exit 0
 }
 
