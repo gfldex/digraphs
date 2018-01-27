@@ -399,6 +399,11 @@ $SIG{'INT'} = sub { ReadMode 0; exit 0 };
 ReadMode 3;
 
 my $first = ReadKey;
+if (ord($first) eq 11) {
+    print chr(11);
+    ReadMode 0;
+    exit 0;
+}
 my $second = ReadKey;
 
 ReadMode 0;
