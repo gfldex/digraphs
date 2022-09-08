@@ -1,37 +1,40 @@
+echo 'bindkey ^K exec .! digraphs' >> ~/.screenrc
 
-!! ‼    != ≠    !I ¡    "' “    "( „    ") “    ", „    "< «    "> »    "a ä    
-"o ö    "s ß    "ü ü    '' ´    '( ‚    ') ‘    ', ¸    ': ¨    '< ⟨    '> ⟩    
-'m ¯    (( ⸨    (< ⟨    (L ⌊    ([ ｢    )) ⸩    )> ⟩    )L ⌋    )] ｣    ** ⁑    
-*. •    *> ‣    *X ×    +- ±    -- —    -. ‐    -: ÷    -a ª    -o º    .. …    
-.M ·    12 ½    14 ¼    1S ¹    2S ²    34 ¾    3S ³    := ≔    <( ⟨    << «    
-<= ≤    =~ ≅    >) ⟩    >= ≥    >> »    ?! ‽    ?? ⁇    ?I ¿    A! À    A' Á    
-A: Ä    A> Â    A? Ã    AA Å    AE Æ    Ad ⇓    Al ⇐    Ar ⇒    Au ⇑    BB ¦    
-C  ␣    C, Ç    C0 ␀    CB ␈    CR ␞    Ce ␛    Cf ␜    Cn ␤    Cp ¶    Cr ⏎    
-Cs ␠    Ct ␄    Cu ¤    D- Ð    DG °    E! È    E' É    E: Ë    E> Ê    I! Ì    
-I' Í    I: Ï    I> Î    N? Ñ    O! Ò    O' Ó    O/ Ø    O0 ⓪    O1 ①    O2 ②    
-O3 ③    O4 ④    O5 ⑤    O6 ⑥    O7 ⑦    O8 ⑧    O9 ⑨    O: Ö    O> Ô    O? Õ    
-OA Ⓐ    OB Ⓑ    OC Ⓒ    OD Ⓓ    OE Ⓔ    OF Ⓕ    OG Ⓖ    OH Ⓗ    OI Ⓘ    OJ Ⓙ    
-OK 👍    OL Ⓛ    OM Ⓜ    ON Ⓝ    OO Ⓞ    OP Ⓟ    OQ Ⓠ    OR Ⓡ    OS Ⓢ    OT Ⓣ    
-OU Ⓤ    OV Ⓥ    OW Ⓦ    OX Ⓧ    OY Ⓨ    OZ Ⓩ    Oa ⓐ    Ob ⓑ    Oc ⓒ    Od ⓓ    
-Oe ⓔ    Of ⓕ    Og ⓖ    Oh ⓗ    Oi ⓘ    Oj ⓙ    Ok ⓚ    Ol ⓛ    Om ⓜ    On ⓝ    
-Oo ⓞ    Op ⓟ    Oq ⓠ    Or ⓡ    Os ⓢ    Ot ⓣ    Ou ⓤ    Ov ⓥ    Ow ⓦ    Ox ⓧ    
-Oy ⓨ    Oz ⓩ    Pd £    SE §    TH Þ    U! Ù    U' Ú    U: Ü    U> Û    Y' Ý    
-Ye ¥    ^( ⁽    ^) ⁾    ^* *    ^+ ⁺    ^- ⁻    ^0 ⁰    ^1 ¹    ^2 ²    ^3 ³    
-^4 ⁴    ^5 ⁵    ^6 ⁶    ^7 ⁷    ^8 ⁸    ^9 ⁹    ^= ⁼    ^i ⁱ    ^n ⁿ    _( ₍    
-_) ₎    _* ⁎    _+ ₊    _- ₋    _0 ₀    _1 ₁    _2 ₂    _3 ₃    _4 ₄    _5 ₅    
-_6 ₆    _7 ₇    _8 ₈    _9 ₉    _= ₋    __ ＿    _a ₐ    _e ₑ    _h ₕ    _i ₕ    
-_j ₕ    _k ₖ    _l ₖ    _m ₖ    _n ₙ    _o ₒ    _p ₚ    _r ₚ    _s ₚ    _t ₜ    
-_u ᵤ    _v ᵥ    _w ₐ    _x ₓ    `` ”    a! à    a' á    a: ä    a> â    a? ã    
-aa å    ad ↓    ae æ    al ←    an ∧    ar →    au ↑    c, ç    co ©    d- ð    
-de ☠    e! è    e' é    e: ë    e> ê    ee ℯ    fc ∘    gA Α    gB Β    gC Γ    
-gD Δ    gE Ε    gG Η    gH Θ    gI Ι    gJ Κ    gK Ξ    gL Λ    gM Μ    gN Ν    
-gP Π    gQ Ρ    gR Σ    gS Τ    gU Φ    gV Χ    gW Ψ    gX Ω    gY Υ    gZ Ζ    
-ga α    gb β    gc γ    gd δ    ge ε    gf ζ    gg η    gh θ    gi ι    gj κ    
-gk ξ    gl λ    gm μ    gn ν    go Ο    gp π    gq ρ    gr ς    gs τ    gu φ    
-gv χ    gw ψ    gx ω    gy υ    h* ✱    ha ♥    i! ì    i' í    i: ï    i> î    
-le ✉    mu ×    my µ    n? ñ    no ¬    o! ò    o' ó    o/ ø    o: ö    o> ô    
-o? õ    oo ∞    or ∨    p* π    pi π    re ®    sd ∖    se ∈    si ∩    sn ∉    
-ss ⊖    st ★    su ∪    th þ    u! ù    u' ú    u: ü    u> û    xo ⊻    y' ý    
-y: ÿ    || ‖    ´´ “    
-
-  ‼ ≠ ¡ “ „ “ „ « » ä ö ß ü ´ ‚ ‘ ¸ ¨ ⟨ ⟩ ¯ ⸨ ⟨ ⌊ ｢ ⸩ ⟩ ⌋ ｣ ⁑ • ‣ × ± — ‐ ÷ ª º … · ½ ¼ ¹ ² ¾ ³ ≔ ⟨ « ≤ ≅ ⟩ ≥ » ‽ ⁇ ¿ À Á Ä Â Ã Å Æ ⇓ ⇐ ⇒ ⇑ ¦ ␣ Ç ␀ ␈ ␞ ␛ ␜ ␤ ¶ ⏎ ␠ ␄ ¤ Ð ° È É Ë Ê Ì Í Ï Î Ñ Ò Ó Ø ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ Ö Ô Õ Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ 👍 Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ ⓐ ⓑ ⓒ ⓓ ⓔ ⓕ ⓖ ⓗ ⓘ ⓙ ⓚ ⓛ ⓜ ⓝ ⓞ ⓟ ⓠ ⓡ ⓢ ⓣ ⓤ ⓥ ⓦ ⓧ ⓨ ⓩ £ § Þ Ù Ú Ü Û Ý ¥ ⁽ ⁾ * ⁺ ⁻ ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁼ ⁱ ⁿ ₍ ₎ ⁎ ₊ ₋ ₀ ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₋ ＿ ₐ ₑ ₕ ₕ ₕ ₖ ₖ ₖ ₙ ₒ ₚ ₚ ₚ ₜ ᵤ ᵥ ₐ ₓ ” à á ä â ã å ↓ æ ← ∧ → ↑ ç © ð ☠ è é ë ê ℯ ∘ Α Β Γ Δ Ε Η Θ Ι Κ Ξ Λ Μ Ν Π Ρ Σ Τ Φ Χ Ψ Ω Υ Ζ α β γ δ ε ζ η θ ι κ ξ λ μ ν Ο π ρ ς τ φ χ ψ ω υ ✱ ♥ ì í ï î ✉ × µ ñ ¬ ò ó ø ö ô õ ∞ ∨ π π ® ∖ ∈ ∩ ∉ ⊖ ★ ∪ þ ù ú ü û ⊻ ý ÿ ‖ “ 
+        
+ z ​    !! ‼    != ≠    !I ¡    "" „“OD    "' “    "( „    ") “    ", „    "< «    
+"> »    "a ä    "o ö    "s ß    "ü ü    '' ‘’OD    '( ‚    ') ‘    ', ¸    ': ¨    
+'< ⟨    '> ⟩    'm ¯    (( ⸨    (< ⟨    (L ⌊    ([ ｢    )) ⸩    )> ⟩    )L ⌋    
+)] ｣    *  ⁢    ** ⁑    *. •    *> ‣    *X ×    *x ×    +- ±    -- —    -. ‐    
+-: ÷    -a ª    -o º    .. …    .M ·    12 ½    14 ¼    1S ¹    2S ²    34 ¾    
+3S ³    := ≔    <( ⟨    << «    <= ≤    =~ ≅    >) ⟩    >= ≥    >> »    ?! ‽    
+?? ⁇    ?I ¿    A! À    A' Á    A: Ä    A> Â    A? Ã    AA Å    AE Æ    Ad ⇓    
+Al ⇐    Ar ⇒    Au ⇑    BB ¦    C  ␣    C, Ç    C0 ␀    CB ␈    CR ␞    Ce ␛    
+Cf ␜    Cn ␤    Cp ¶    Cr ⏎    Cs ␠    Ct ␄    Cu ¤    D- Ð    DG °    E! È    
+E' É    E: Ë    E> Ê    I! Ì    I' Í    I: Ï    I> Î    N? Ñ    O! Ò    O' Ó    
+O/ Ø    O0 ⓪    O1 ①    O2 ②    O3 ③    O4 ④    O5 ⑤    O6 ⑥    O7 ⑦    O8 ⑧    
+O9 ⑨    O: Ö    O> Ô    O? Õ    OA Ⓐ    OB Ⓑ    OC Ⓒ    OD Ⓓ    OE Ⓔ    OF Ⓕ    
+OG Ⓖ    OH Ⓗ    OI Ⓘ    OJ Ⓙ    OK 👍    OL Ⓛ    OM Ⓜ    ON Ⓝ    OO Ⓞ    OP Ⓟ    
+OQ Ⓠ    OR Ⓡ    OS Ⓢ    OT Ⓣ    OU Ⓤ    OV Ⓥ    OW Ⓦ    OX Ⓧ    OY Ⓨ    OZ Ⓩ    
+Oa ⓐ    Ob ⓑ    Oc ⓒ    Od ⓓ    Oe ⓔ    Of ⓕ    Og ⓖ    Oh ⓗ    Oi ⓘ    Oj ⓙ    
+Ok ⓚ    Ol ⓛ    Om ⓜ    On ⓝ    Oo ⓞ    Op ⓟ    Oq ⓠ    Or ⓡ    Os ⓢ    Ot ⓣ    
+Ou ⓤ    Ov ⓥ    Ow ⓦ    Ox ⓧ    Oy ⓨ    Oz ⓩ    Pd £    SE §    TH Þ    U! Ù    
+U' Ú    U: Ü    U> Û    Y' Ý    Ye ¥    ^( ⁽    ^) ⁾    ^* *    ^+ ⁺    ^- ⁻    
+^0 ⁰    ^1 ¹    ^2 ²    ^3 ³    ^4 ⁴    ^5 ⁵    ^6 ⁶    ^7 ⁷    ^8 ⁸    ^9 ⁹    
+^= ⁼    ^i ⁱ    ^n ⁿ    _( ₍    _) ₎    _* ⁎    _+ ₊    _- ₋    _0 ₀    _1 ₁    
+_2 ₂    _3 ₃    _4 ₄    _5 ₅    _6 ₆    _7 ₇    _8 ₈    _9 ₉    _= ₋    __ ＿    
+_a ₐ    _e ₑ    _h ₕ    _i ₕ    _j ₕ    _k ₖ    _l ₖ    _m ₖ    _n ₙ    _o ₒ    
+_p ₚ    _r ₚ    _s ₚ    _t ₜ    _u ᵤ    _v ᵥ    _w ₐ    _x ₓ    `` ”    a! à    
+a' á    a+ ⚛++    a- ⚛--    a: ä    a> â    a? ã    aa å    ad ↓    ae æ    al ←    
+an ∧    ar →    at ⚛    au ↑    c, ç    co ©    d- ð    de ☠    e! è    e' é    
+e: ë    e> ê    ee ℯ    fc ∘    gA Α    gB Β    gC Γ    gD Δ    gE Ε    gG Η    
+gH Θ    gI Ι    gJ Κ    gK Ξ    gL Λ    gM Μ    gN Ν    gP Π    gQ Ρ    gR Σ    
+gS Τ    gU Φ    gV Χ    gW Ψ    gX Ω    gY Υ    gZ Ζ    ga α    gb β    gc γ    
+gd δ    ge ε    gf ζ    gg η    gh θ    gi ι    gj κ    gk ξ    gl λ    gm μ    
+gn ν    go Ο    gp π    gq ρ    gr ς    gs τ    gu φ    gv χ    gw ψ    gx ω    
+gy υ    h* ✱    ha ♥    i! ì    i' í    i: ï    i> î    le ✉    mu ×    my µ    
+n? ñ    no ¬    o! ò    o' ó    o/ ø    o: ö    o> ô    o? õ    oo ∞    or ∨    
+p* π    pi π    r0 Ⅹ    r1 Ⅰ    r2 Ⅱ    r3 Ⅲ    r4 Ⅳ    r5 Ⅴ    r6 Ⅵ    r7 Ⅶ    
+r8 Ⅷ    r9 Ⅸ    rc Ⅽ    rd Ⅾ    re ®    rl Ⅼ    rm Ⅿ    s0 ∅    sa ⊆    sc ∋    
+sd ∖    se ∈    si ∩    sn ∉    ss ⊖    st ★    su ∪    th þ    tm ™    u! ù    
+u' ú    u: ü    u> û    xo ⊻    y' ý    y: ÿ    || ‖    ~~ ≈    ´´ “    
+  ​ ‼ ≠ ¡ „“OD “ „ “ „ « » ä ö ß ü ‘’OD ‚ ‘ ¸ ¨ ⟨ ⟩ ¯ ⸨ ⟨ ⌊ ｢ ⸩ ⟩ ⌋ ｣ ⁢ ⁑ • ‣ × × ± — ‐ ÷ ª º … · ½ ¼ ¹ ² ¾ ³ ≔ ⟨ « ≤ ≅ ⟩ ≥ » ‽ ⁇ ¿ À Á Ä Â Ã Å Æ ⇓ ⇐ ⇒ ⇑ ¦ ␣ Ç ␀ ␈ ␞ ␛ ␜ ␤ ¶ ⏎ ␠ ␄ ¤ Ð ° È É Ë Ê Ì Í Ï Î Ñ Ò Ó Ø ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ Ö Ô Õ Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ 👍 Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ ⓐ ⓑ ⓒ ⓓ ⓔ ⓕ ⓖ ⓗ ⓘ ⓙ ⓚ ⓛ ⓜ ⓝ ⓞ ⓟ ⓠ ⓡ ⓢ ⓣ ⓤ ⓥ ⓦ ⓧ ⓨ ⓩ £ § Þ Ù Ú Ü Û Ý ¥ ⁽ ⁾ * ⁺ ⁻ ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁼ ⁱ ⁿ ₍ ₎ ⁎ ₊ ₋ ₀ ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₋ ＿ ₐ ₑ ₕ ₕ ₕ ₖ ₖ ₖ ₙ ₒ ₚ ₚ ₚ ₜ ᵤ ᵥ ₐ ₓ ” à á ⚛++ ⚛-- ä â ã å ↓ æ ← ∧ → ⚛ ↑ ç © ð ☠ è é ë ê ℯ ∘ Α Β Γ Δ Ε Η Θ Ι Κ Ξ Λ Μ Ν Π Ρ Σ Τ Φ Χ Ψ Ω Υ Ζ α β γ δ ε ζ η θ ι κ ξ λ μ ν Ο π ρ ς τ φ χ ψ ω υ ✱ ♥ ì í ï î ✉ × µ ñ ¬ ò ó ø ö ô õ ∞ ∨ π π Ⅹ Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅽ Ⅾ ® Ⅼ Ⅿ ∅ ⊆ ∋ ∖ ∈ ∩ ∉ ⊖ ★ ∪ þ ™ ù ú ü û ⊻ ý ÿ ‖ ≈ “ 
